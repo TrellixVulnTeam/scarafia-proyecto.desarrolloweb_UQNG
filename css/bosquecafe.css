@@ -74,7 +74,7 @@ a{
     padding: 20px;
 }
 #inicio{
-    background-color: #faf878c4;
+    background-image:  linear-gradient(to bottom, #7d9e3c, #9ab250, #efed98, #faf878c4, #ffdf3c);
     display: grid;
     grid-template-rows: 0.31fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
