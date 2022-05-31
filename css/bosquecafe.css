@@ -1,0 +1,421 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+}
+header{
+    width: 100%;
+}
+.titulo{
+    color:black;
+    font-family: "Cinzel", serif;
+    font-size: 4rem;
+    text-align:center;
+    background-color: #7d9e3c;
+    padding: 5rem;
+
+}
+.menu{
+    background-color: #fe9f8c;
+    text-align: center;
+    font-family: "Montaga", serif;
+    font-size: 2.3rem;
+    padding: 1rem;
+    display: inline-block;
+    width: 98.3%;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.presentacion{
+    padding: 5rem;
+    font-size: 2rem;
+    font-family: "Montaga", serif;
+    background-color: #b17653;
+    color:#efed89;
+    text-align: center;
+}
+.pp{
+    grid-area: pp;
+}
+.div1{
+    padding: 5rem;
+    font-size: 1.7rem;
+    font-family: "Raleway";
+    grid-area: div1;
+}
+#imgDiv1{
+    grid-area: imgD1;
+}
+.div2{
+    padding: 5rem;
+    font-size: 1.7rem;
+    font-family: "Raleway";
+    grid-area: div2;
+}
+#imgDiv2{
+    grid-area: imgD2;
+}
+.button{
+    background-color: #b17653;
+    color: white;
+    padding: 20px;
+}
+#inicio{
+    background-color: #faf878c4;
+    display: grid;
+    grid-template-rows: 0.31fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "pp pp"
+    "div1 imgD1"
+    "imgD2 div2";
+    row-gap: 2.5rem;
+}
+#Contacto{
+    padding: 2.5rem;
+    font-size: 2rem;
+    font-family: "Halant", serif;
+    font-weight: 400;
+    background-color: #9ab250;
+    text-align: center;
+}
+.video{
+    padding: 30px;
+    display: block;
+    text-align: center;
+    grid-area: video;
+}
+.sobreNos{
+    font-size: 1.8rem;
+    font-family: "Raleway";
+    padding:5rem;
+    grid-area: sobreNos;
+}
+.sobreCafe{
+    font-size: 1.8rem;
+    font-family: "Raleway";
+    padding:5rem;
+    grid-area: sobreCafe;
+}
+.imgSobreNos{
+    grid-area: imgSN;
+}
+.imgSobreCafe{
+    grid-area: imgSC;
+}
+#imgPie{
+    grid-area: imgPie;
+}
+#sobreNosotros{
+    background-color: #faf878c4;
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.7fr 0.8fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "sobreNos imgSN"
+    "imgSC sobreCafe"
+    "video video"
+    "imgPie imgPie";
+}
+.carta{
+    font-size: 1.8rem;
+    font-family: "Raleway";
+    background-color: #faf878c4;
+    padding:6rem;
+    padding-left: 1rem;
+}
+.carta ul li{
+    list-style-type: none;
+}
+.cafeteria{
+    grid-area: caf;
+}
+.ladoB{
+    grid-area: ladoB;
+}
+.extras{
+    grid-area: extras;
+}
+.panaderia{
+    grid-area: pan;
+}
+.masaMadre{
+    grid-area: masaM;
+}
+.img{
+    grid-area: img;
+}
+.carta{
+    display:grid;
+    grid-template-rows: 0.5fr 2.5fr 1.3fr 1.7fr;
+    grid-template-columns: 28rem 37rem 2fr;
+    grid-template-areas: 
+    "img h3 h3"
+    "img caf ladoB"
+    "img extras extras"
+    "img pan masaM";
+    column-gap: 3rem;
+}
+.div--ig{
+    font-size: 1.7rem;
+    font-family: "Raleway";
+    background-color: #faf878c4;
+    padding:5rem;
+}
+.imgG1{
+    grid-area: imgG1;
+}
+.imgG2{
+    grid-area: imgG2;
+}
+.imgG3{
+    grid-area: imgG3;
+}
+.imgG4{
+    grid-area: imgG4;
+}
+.imgG5{
+    grid-area: imgG5;
+}
+.imgG6{
+    grid-area: imgG6;
+}
+.imgG7{
+    grid-area: imgG7;
+}
+.imgG8{
+    grid-area: imgG8;
+}
+.imgG9{
+    grid-area: imgG9;
+}
+.gal{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "imgG1 imgG2 imgG3"
+    "imgG4 imgG5 imgG6"
+    "imgG7 imgG8 imgG9";
+    row-gap: 2.5rem;
+    column-gap: 2rem;
+}
+
+/*media query*/
+@media screen and (max-width:768px){
+    .titulo{
+        font-size: 3rem;
+    }
+    .menu{
+        font-size: 1.7rem;
+    }
+    #inicio{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.8fr 1fr 0.6fr 1fr;
+        grid-template-areas: 
+        "pp"
+        "div1"
+        "imgD1"
+        "div2"
+        "imgD2";
+    }
+    #sobreNosotros{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 1fr 0.6fr 1fr 0.8fr;
+        grid-template-areas: 
+        "sobreNos"
+        "imgSN"
+        "sobreCafe"
+        "imgSC"
+        "video";
+    }
+    #imgPie{
+        display: none;
+    }
+    .imgSN imgSC{
+        width: 250px;
+    }
+    .carta{
+        grid-template-rows: 0.3fr 2.3fr 1.4fr 1fr 1.3fr 1.3fr;
+        grid-template-columns: 0.1fr 1fr;
+        grid-template-areas: 
+        "img h3"
+        "img caf"
+        "img ladoB"
+        "img extras"
+        "img pan" 
+        "img masaM";
+    }
+    .gal{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "imgG1 imgG2" 
+        "imgG3 imgG4" 
+        "imgG5 imgG6"
+        "imgG7 imgG8";
+        row-gap: 1rem;
+        column-gap: none;
+    }
+    .imgG9{
+        display:none;
+    }
+    .presentacion{
+        font-size: 1.5rem;
+        padding: 3rem;
+    }
+    .div--ig{
+        font-size: 1.5rem;
+        width: 700px;
+        padding: 3rem;
+    }
+    .div1{
+        font-size: 1.5rem;
+        width: 700px;
+        padding: 3rem;
+    }
+    .div2{
+        font-size: 1.5rem;
+        width: 700px;
+        padding: 3rem;
+    }
+    .sobreCafe{
+        font-size: 1.5rem;
+        width: 700px;
+        padding: 3rem;
+    }
+    .sobreNos{
+        font-size: 1.5rem;
+        width: 700px;
+        padding: 3rem;
+    }
+    .carta{
+        font-size: 1.5rem;
+        width: 700px;
+        padding: 3rem;
+    }
+    .gal{
+        font-size: 1.5rem;
+        width: 700px;
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width:320px){
+    .titulo{
+        font-size: 2rem;
+    }
+    .menu{
+        font-size: 1.3rem;
+    }
+    #inicio{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 0.6fr 1fr 0.6fr 1fr;
+        grid-template-areas: 
+        "pp"
+        "div1"
+        "imgD1"
+        "div2"
+        "imgD2";
+    }
+    #sobreNosotros{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 1fr 0.6fr 1fr 0.8fr;
+        grid-template-areas: 
+        "sobreNos"
+        "imgSN"
+        "sobreCafe"
+        "imgSC"
+        "video";
+    }
+    #imgPie{
+        display: none;
+    }
+    .carta{
+        grid-template-rows: 0.5fr 2.5fr 1.3fr 1.7fr 1.3fr 1.2fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h3"
+        "caf"
+        "ladoB"
+        "extras"
+        "pan" 
+        "masaM";
+    }
+    .img{
+        display: none;
+    }
+    .gal{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9,1fr);
+        grid-template-areas: 
+        "imgG1"
+        "imgG2" 
+        "imgG3"
+        "imgG4" 
+        "imgG5" 
+        "imgG6"
+        "imgG7" 
+        "imgG8"
+        "imgG9";
+        row-gap: 1rem;
+        column-gap: none;
+    }
+    .presentacion{
+        font-size: 1.3rem;
+        padding: 2rem;
+        width: max-content;
+    }
+    .div--ig{
+        font-size: 1.3rem;
+        width: 250px;
+        padding: 2rem;
+    }
+    .div1{
+        font-size: 1.3rem;
+        width: 250px;
+        padding: 2rem;
+    }
+    .div2{
+        font-size: 1.3rem;
+        width: 250px;
+        padding: 2rem;
+    }
+    .sobreCafe{
+        font-size: 1.3rem;
+        width: 250px;
+        padding: 2rem;
+    }
+    .sobreNos{
+        font-size: 1.3rem;
+        width: 250px;
+        padding: 2rem;
+    }
+    .carta{
+        font-size: 1.3rem;
+        width: 250px;
+        padding: 2rem;
+    }
+    .gal{
+        font-size: 1.3rem;
+        width: 250px;
+        padding: 2rem;
+    }
+
+}
+
+
+
