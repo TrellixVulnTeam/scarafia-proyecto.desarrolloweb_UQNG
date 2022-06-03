@@ -118,18 +118,10 @@ a{
 .imgSobreCafe{
     grid-area: imgSC;
 }
-#imgPie{
-    grid-area: imgPie;
-}
 #sobreNosotros{
     background-color: #faf878c4;
-    display: grid;
-    grid-template-rows: 1fr 1fr 0.7fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "sobreNos imgSN"
-    "imgSC sobreCafe"
-    "video video";
+    padding-top: 2rem;
+    row-gap: 2rem;
 }
 .carta{
     font-size: 1.8rem;
