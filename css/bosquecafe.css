@@ -60,7 +60,7 @@ a{
     font-size: 1.7rem;
     font-family: "Raleway";
     grid-area: div1;
-    width: 460px;
+    width: 600px;
 }
 #imgDiv1{
     grid-area: imgD1;
@@ -70,10 +70,11 @@ a{
     font-size: 1.7rem;
     font-family: "Raleway";
     grid-area: div2;
-    width: 460px;
+    width: 600px;
 }
 #imgDiv2{
     grid-area: imgD2;
+    padding: 2rem;
 }
 .button{
     background-color: #b17653;
@@ -83,6 +84,7 @@ a{
 #inicio{
     background-color: #faf878c4;
     width: 100%;
+    padding-bottom: 3rem;;
 }
 #Contacto{
     padding: 2.5rem;
