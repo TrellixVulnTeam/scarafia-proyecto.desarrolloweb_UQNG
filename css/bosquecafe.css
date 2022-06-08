@@ -83,6 +83,24 @@ a{
     background-color: #b17653;
     color: white;
     padding: 20px;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.button:focus{
+    transform: scale(1);
+    color: white;
+}
+.btn{
+    background-color: #b17653;
+    color: white;
+    font-size: 1.7rem;
+    font-family: "Raleway";
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.btn:hover{
+    transform: scale(1);
 }
 #inicio{
     background-color: #faf878c4;
