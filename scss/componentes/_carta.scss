@@ -1,0 +1,43 @@
+.carta{
+    @extend %divs-parr;
+    background-color: nth($colors,7);
+    display:grid;
+    grid-template-rows: 0.5fr 2.5fr 1.3fr 1.7fr;
+    grid-template-columns: 28rem 37rem 2fr;
+    grid-template-areas: 
+    "img h3 h3"
+    "img caf ladoB"
+    "img extras extras"
+    "img pan masaM";
+    column-gap: 3rem;
+    h3{
+        font-size: nth($size, 4);
+        font-weight: bold;
+    }
+    h4{
+        font-size: nth($size, 6);
+        font-weight:bolder; 
+    }
+    li{
+        list-style-type: none;
+    }
+    .cafeteria{
+    grid-area: caf;
+    }
+    .ladoB{
+    grid-area: ladoB;
+    }
+    .extras{
+    grid-area: extras;
+    }
+    .panaderia{
+    grid-area: pan;
+    }
+    .masaMadre{
+    grid-area: masaM;
+    }
+    .img{
+    grid-area: img;
+    }
+}
+
