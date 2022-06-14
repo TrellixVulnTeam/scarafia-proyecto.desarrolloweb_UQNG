@@ -88,10 +88,10 @@ footer {
 .carta {
   background-color: rgba(250, 248, 120, 0.768627451);
   display: grid;
-  grid-template-rows: 0.5fr 2.5fr 1.3fr 1.7fr;
-  grid-template-columns: 28rem 37rem 2fr;
-  grid-template-areas: "img h3 h3" "img caf ladoB" "img extras extras" "img pan masaM";
-  column-gap: 3rem;
+  grid-template-columns: max-content;
+  grid-template-rows: max-content;
+  grid-template-areas: "img seccion";
+  /*media query*/
 }
 .carta h3 {
   font-size: 2.5rem;
@@ -104,23 +104,21 @@ footer {
 .carta li {
   list-style-type: none;
 }
-.carta .cafeteria {
-  grid-area: caf;
-}
-.carta .ladoB {
-  grid-area: ladoB;
-}
-.carta .extras {
-  grid-area: extras;
-}
-.carta .panaderia {
-  grid-area: pan;
-}
-.carta .masaMadre {
-  grid-area: masaM;
-}
 .carta .img {
   grid-area: img;
+}
+.carta .seccion {
+  grid-area: seccion;
+}
+@media screen and (max-width: 320px) {
+  .carta #diseno {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carta #diseno {
+    display: none;
+  }
 }
 
 .div--ig {

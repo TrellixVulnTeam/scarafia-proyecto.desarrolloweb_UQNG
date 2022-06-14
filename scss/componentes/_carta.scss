@@ -1,15 +1,12 @@
 .carta{
     @extend %divs-parr;
     background-color: nth($colors,7);
-    display:grid;
-    grid-template-rows: 0.5fr 2.5fr 1.3fr 1.7fr;
-    grid-template-columns: 28rem 37rem 2fr;
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: max-content;
     grid-template-areas: 
-    "img h3 h3"
-    "img caf ladoB"
-    "img extras extras"
-    "img pan masaM";
-    column-gap: 3rem;
+    "img seccion";
+
     h3{
         font-size: nth($size, 4);
         font-weight: bold;
@@ -21,23 +18,22 @@
     li{
         list-style-type: none;
     }
-    .cafeteria{
-    grid-area: caf;
-    }
-    .ladoB{
-    grid-area: ladoB;
-    }
-    .extras{
-    grid-area: extras;
-    }
-    .panaderia{
-    grid-area: pan;
-    }
-    .masaMadre{
-    grid-area: masaM;
-    }
     .img{
-    grid-area: img;
+        grid-area: img;
+    }
+    .seccion{
+        grid-area: seccion;
+    }
+    /*media query*/
+    @media screen and (max-width:320px){
+        #diseno {
+            display: none;
+        }
+    }
+    @media screen and (max-width:768px){
+        #diseno {
+            display: none;
+        }
     }
 }
 
